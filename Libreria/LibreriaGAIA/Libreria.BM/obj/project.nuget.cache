@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xsv6kXB0kUk645iWijYTlFKT/Jww1tdD0X92B+TZHI3nBEcWf/yMgJcCCDRTq8KPl81iyRmupjGEgCM813JtJQ==",
+  "dgSpecHash": "xHmOs7Dl0SFMKyOQ6MneT17Y0KsyS6zQwch6dwUGDm9perI/yWK58bx/CcnaUM/hSd0xIcqYY/ojwLIoX/VWLg==",
   "success": true,
-  "projectFilePath": "E:\\Libreria\\LibreriaGAIA\\Libreria.BM\\Libreria.BM.csproj",
+  "projectFilePath": "C:\\Users\\solop\\Documents\\GitHub\\LibreriaGaia\\Libreria\\LibreriaGAIA\\Libreria.BM\\Libreria.BM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\solop\\.nuget\\packages\\insight.database\\6.2.11\\insight.database.6.2.11.nupkg.sha512",
     "C:\\Users\\solop\\.nuget\\packages\\insight.database.configuration\\6.2.11\\insight.database.configuration.6.2.11.nupkg.sha512",

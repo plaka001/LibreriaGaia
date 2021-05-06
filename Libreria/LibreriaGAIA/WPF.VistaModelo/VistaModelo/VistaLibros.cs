@@ -43,9 +43,9 @@
 
                     DTRespuesta<IList<DTAutorList>> result = JsonConvert.DeserializeObject<DTRespuesta<IList<DTAutorList>>>(Json);
                     var lista = new ObservableCollection<DTAutorList>(result.Data);
-                    GroupParentList.Clear();
+                    Authors.Clear();
                     foreach (var item in lista)
-                        GroupParentList.Add(item);
+                        Authors.Add(item);
                    
                 }
             }
@@ -304,23 +304,17 @@
             Msj = string.Empty;
 
         }
-        private ObservableCollection<DTAutorList> authors;
+        private ObservableCollection<DTAutorList> authors = null;
         public ObservableCollection<DTAutorList> Authors
-        {
-            get=> authors;
-            set => SetProperty(ref authors, value);
-        }
-
-        public static ObservableCollection<DTAutorList> groupParentList = null;
-        public virtual ObservableCollection<DTAutorList> GroupParentList
         {
             get
             {
-                if (groupParentList == null)
-                    groupParentList = new ObservableCollection<DTAutorList>();
-                return groupParentList;
+                if (authors == null)
+                    authors = new ObservableCollection<DTAutorList>();
+                return authors;
             }
         }
+
         private ObservableCollection<DTListLibros> libros;
         public ObservableCollection<DTListLibros> Libros
         {
