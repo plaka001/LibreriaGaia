@@ -1,0 +1,16 @@
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.BM.deps.json
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.BM.dll
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.BM.pdb
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.DM.dll
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.DT.dll
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.Soporte.dll
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.DM.pdb
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.DT.pdb
+E:\Libreria\LibreriaGAIA\Libreria.BM\bin\Debug\netcoreapp3.1\Libreria.Soporte.pdb
+E:\Libreria\LibreriaGAIA\Libreria.BM\obj\Debug\netcoreapp3.1\Libreria.BM.csprojAssemblyReference.cache
+E:\Libreria\LibreriaGAIA\Libreria.BM\obj\Debug\netcoreapp3.1\Libreria.BM.AssemblyInfoInputs.cache
+E:\Libreria\LibreriaGAIA\Libreria.BM\obj\Debug\netcoreapp3.1\Libreria.BM.AssemblyInfo.cs
+E:\Libreria\LibreriaGAIA\Libreria.BM\obj\Debug\netcoreapp3.1\Libreria.BM.csproj.CoreCompileInputs.cache
+E:\Libreria\LibreriaGAIA\Libreria.BM\obj\Debug\netcoreapp3.1\Libreria.BM.csproj.CopyComplete
+E:\Libreria\LibreriaGAIA\Libreria.BM\obj\Debug\netcoreapp3.1\Libreria.BM.dll
+E:\Libreria\LibreriaGAIA\Libreria.BM\obj\Debug\netcoreapp3.1\Libreria.BM.pdb

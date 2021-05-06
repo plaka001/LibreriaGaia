@@ -1,0 +1,11 @@
+E:\Libreria\LibreriaGAIA\Libreria.DT\bin\Debug\netcoreapp3.1\Libreria.DT.deps.json
+E:\Libreria\LibreriaGAIA\Libreria.DT\bin\Debug\netcoreapp3.1\Libreria.DT.dll
+E:\Libreria\LibreriaGAIA\Libreria.DT\bin\Debug\netcoreapp3.1\Libreria.DT.pdb
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.csprojAssemblyReference.cache
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.Mensajes.Mensajes.resources
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.csproj.GenerateResource.cache
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.AssemblyInfoInputs.cache
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.AssemblyInfo.cs
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.csproj.CoreCompileInputs.cache
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.dll
+E:\Libreria\LibreriaGAIA\Libreria.DT\obj\Debug\netcoreapp3.1\Libreria.DT.pdb

@@ -1,0 +1,291 @@
+﻿<Window x:Class="Libreria.Presentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:vm="clr-namespace:WPF.VistaModelo.VistaModelo;assembly=WPF.VistaModelo"
+       
+        Title="Libreria Gaia"
+        mc:Ignorable="d"
+        Width="1300"
+        Height="800"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        ResizeMode="NoResize"
+        TextElement.FontSize="13"
+        TextElement.FontWeight="Regular"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        WindowStartupLocation="CenterScreen"      
+        >
+   
+    <Grid HorizontalAlignment="Left" 
+          Height="762" Margin="7,2,0,0" 
+          VerticalAlignment="Top" 
+           Width="1280">
+        <StackPanel HorizontalAlignment="Left" 
+                    Height="704" Margin="48,10,0,0" 
+                    VerticalAlignment="Top" Width="536" 
+                    Orientation="Vertical">
+
+            <StackPanel.DataContext>
+                <vm:VistaAutor/>
+            </StackPanel.DataContext>
+            <TextBlock TextWrapping="Wrap" Text="Registrar Autor" 
+                       HorizontalAlignment="Center" 
+                       FontSize="25"/>
+            <StackPanel Height="59" 
+                        HorizontalAlignment="Left" 
+                        Orientation="Horizontal" 
+                        Width="526">
+                <TextBox Height="40" 
+                         Width="220"
+                         Margin="40,10,10,0" 
+                         TextWrapping="Wrap" 
+                         materialDesign:HintAssist.Hint="Nombre*"
+                         Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                         Text="{Binding NombreAutor}"
+                         />
+                <TextBox Height="40" 
+                         Width="220"
+                         Margin="40,10,10,0" 
+                         TextWrapping="Wrap" 
+                         materialDesign:HintAssist.Hint="Apellido*"
+                         Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                         Text="{Binding ApellidoAutor}"
+                         />
+            </StackPanel>
+            <StackPanel Height="59" HorizontalAlignment="Left" Orientation="Horizontal" Width="526">
+                <TextBox Height="40" 
+                         Width="220"
+                         Margin="40,10,10,0" 
+                         TextWrapping="Wrap" 
+                         materialDesign:HintAssist.Hint="Edad*"
+                         Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                         Text="{Binding Edad}"
+                         
+                         
+                         />
+                <ComboBox
+                            Height="40"
+                            Width="220"
+                            Margin="40,10,10,0"
+                            materialDesign:HintAssist.Hint="Sexo*"
+                            DisplayMemberPath="Sexo"
+                            ItemsSource="{Binding Sexo}"
+                            SelectedValue="{Binding IdSexo}"
+                            SelectedValuePath="IdSexo"
+                            Style="{DynamicResource MaterialDesignFloatingHintComboBox}" />
+
+
+
+            </StackPanel>
+            <StackPanel Height="81" HorizontalAlignment="Left" Orientation="Horizontal" Width="536">
+                <ComboBox
+                            Height="40"
+                            Width="220"
+                            Margin="40,10,10,0"
+                            materialDesign:HintAssist.Hint="Pais*"
+                            DisplayMemberPath="Pais"
+                            ItemsSource="{Binding Paises}"
+                            SelectedValue="{Binding IdCountry}"
+                            SelectedValuePath="IdPais"
+                            Style="{DynamicResource MaterialDesignFloatingHintComboBox}" />
+                <ComboBox
+                            Height="40"
+                            Width="220"
+                            Margin="40,10,10,0"
+                            materialDesign:HintAssist.Hint="Departamento*"
+                            DisplayMemberPath="Departamento"
+                            ItemsSource="{Binding Departamentos}"
+                            SelectedValue="{Binding IdDepartamento}"
+                            SelectedValuePath="IdDepartamento"
+                            Style="{DynamicResource MaterialDesignFloatingHintComboBox}" 
+                    />
+            </StackPanel>
+            <StackPanel Height="81" HorizontalAlignment="Left" Orientation="Horizontal" Width="526">
+                <ComboBox
+                            Height="40"
+                            Width="220"
+                            Margin="40,10,10,0"
+                            materialDesign:HintAssist.Hint="Ciudad*"
+                            DisplayMemberPath="Ciudad"
+                            ItemsSource="{Binding Ciudades}"
+                            SelectedValue="{Binding IdCiudad}"
+                            SelectedValuePath="IdCiudad"
+                            Style="{DynamicResource MaterialDesignFloatingHintComboBox}" />
+
+            </StackPanel>
+
+            <StackPanel Height="70" HorizontalAlignment="Left" Orientation="Horizontal" Width="526">
+
+                <Button Content="Guardar" 
+                        Height="50" 
+                        Width="100"
+                        Background="Blue"
+                        Margin="50,10,10,10"
+                        Command="{Binding CrearAutorComando}"
+                        IsEnabled="{Binding IsEnabled}"
+                        
+                        
+                        />
+                <Button Content="Actualizar" 
+                        Height="50" 
+                        Width="100"
+                        Margin="50,10,10,10"
+                        Command="{Binding ActualizarAutorComando}"
+                        
+                        
+                        />
+                <Button Content="Eliminar" 
+                        Background="Red"
+                        Height="50" 
+                        Width="100"
+                        Margin="50,10,10,10"
+                        Command="{Binding EliminarAutorCommand}"
+                        />
+            </StackPanel>
+            <StackPanel>
+                <DataGrid Margin="0,10,10,0"
+                          Height="275"
+                          VerticalAlignment="Top"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          ItemsSource="{Binding Authors}"
+                          SelectedItem="{Binding AutorSeleccionado}"
+                          Style="{DynamicResource MaterialDesignDataGrid}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Nombre}" Header="Autor" />
+                        <DataGridTextColumn Binding="{Binding Pais}" Header="Nacionalidad" />
+                        <DataGridTextColumn Binding="{Binding Sexo}" Header="Género" />
+                        <DataGridTextColumn Binding="{Binding CantidadLibros}" Header="Libros" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <TextBlock  Margin="10,0,0,5"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                    Text="{Binding Msj}" />
+            </StackPanel>
+        </StackPanel>
+        
+        
+        <!--Libros-->        
+        <StackPanel HorizontalAlignment="Left" 
+                    Height="704" Margin="628,10,0,0" 
+                    VerticalAlignment="Top" Width="610" 
+                    Orientation="Vertical">
+
+            <StackPanel.DataContext>
+                <vm:VistaLibros/>
+            </StackPanel.DataContext>
+            
+            <Grid   HorizontalAlignment="Left" 
+                    Height="706" Margin="7,2,-47,0" 
+                    VerticalAlignment="Top" 
+                    Width="650">               
+                <TextBlock TextWrapping="Wrap" 
+                           Text="Registrar Libro" 
+                           HorizontalAlignment="Center" 
+                           FontSize="25" 
+                           Margin="0,10,10,10"/>
+                <StackPanel HorizontalAlignment="Left"
+                            Height="79" Margin="10,49,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="630" 
+                            Orientation="Horizontal">
+                    <TextBox Height="40" 
+                             Width="220"
+                             Margin="40,10,10,0" 
+                             TextWrapping="Wrap" 
+                             materialDesign:HintAssist.Hint="Nombre*"
+                               Text="{Binding NombreLibro}"
+                             Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                             />
+                    <DatePicker Width="220"
+                                Height="40"
+                                Margin="40,10,10,0"
+                                materialDesign:HintAssist.Hint="Fecha Lanzamiento *"
+                                SelectedDate="{Binding FechaD}"
+                                Style="{DynamicResource MaterialDesignDatePicker}" />
+
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Height="100" Margin="10,128,0,0" VerticalAlignment="Top" Width="630" Orientation="Horizontal">
+                    <TextBox Height="40" 
+                             Width="220"
+                             Margin="40,10,10,0" 
+                             InputScope="Number"
+                             TextWrapping="Wrap" 
+                             materialDesign:HintAssist.Hint="Precio*"
+                              Text="{Binding Costo}"
+                             Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                             />
+                    <ComboBox                      
+                              
+                            Height="40"
+                            Width="220"
+                            Margin="40,10,10,0"                           
+                            materialDesign:HintAssist.Hint="Autor*"
+                            DisplayMemberPath="Nombre"          
+                            ItemsSource="{Binding GroupParentList}"
+                            SelectedValue="{Binding IdAutor}"
+                            SelectedValuePath="IdAutor"                        
+                        >
+                            
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Height="100" Margin="10,233,0,0" VerticalAlignment="Top" Width="630" Orientation="Horizontal">
+                    <Button Content="Guardar" 
+                        Height="50" 
+                        Width="100"
+                        Background="Blue"
+                        Margin="50,10,10,10"
+                        Command="{Binding createLibroCommand}"
+                        />
+                    <Button Content="Actualizar" 
+                            Height="50" 
+                            Width="100"
+                            Margin="50,10,10,10"
+                             Command="{Binding ActualizarLibroComando}"
+                            />
+                    <Button Content="Eliminar" 
+                            Background="Red"
+                            Height="50" 
+                            Width="100"
+                            Margin="50,10,10,10"
+                             Command="{Binding EliminarLibroCommand}"
+                            />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Height="358" Margin="10,338,0,0" VerticalAlignment="Top" Width="630" Orientation="Horizontal">
+                    <DataGrid 
+                            Width="512"
+                            Height="275"
+                            Margin="80,10,0,0"
+                            VerticalAlignment="Top"
+                            AutoGenerateColumns="False"
+                            IsReadOnly="True"
+                            ItemsSource="{Binding Libros}"
+                            SelectedItem="{Binding LibroSeleccionado}"
+                            Style="{DynamicResource MaterialDesignDataGrid}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Nombre}" Header="Libro" />
+                            <DataGridTextColumn Binding="{Binding FechaEscritura}" Header="Escritura" />
+                            <DataGridTextColumn Binding="{Binding Costo}" Header="Precio" />
+                            <DataGridTextColumn Binding="{Binding NombreAutor}" Header="Autor" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    
+                </StackPanel>
+                <TextBlock  Margin="10,0,0,5"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
+                    Text="{Binding Msj}" />
+            </Grid>
+            
+        </StackPanel>
+      
+    </Grid>
+</Window>

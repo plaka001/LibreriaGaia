@@ -1,0 +1,12 @@
+E:\Libreria\LibreriaGAIA\Libreria.DM\bin\Debug\netcoreapp3.1\Libreria.DM.deps.json
+E:\Libreria\LibreriaGAIA\Libreria.DM\bin\Debug\netcoreapp3.1\Libreria.DM.dll
+E:\Libreria\LibreriaGAIA\Libreria.DM\bin\Debug\netcoreapp3.1\Libreria.DM.pdb
+E:\Libreria\LibreriaGAIA\Libreria.DM\bin\Debug\netcoreapp3.1\Libreria.DT.dll
+E:\Libreria\LibreriaGAIA\Libreria.DM\bin\Debug\netcoreapp3.1\Libreria.DT.pdb
+E:\Libreria\LibreriaGAIA\Libreria.DM\obj\Debug\netcoreapp3.1\Libreria.DM.csprojAssemblyReference.cache
+E:\Libreria\LibreriaGAIA\Libreria.DM\obj\Debug\netcoreapp3.1\Libreria.DM.AssemblyInfoInputs.cache
+E:\Libreria\LibreriaGAIA\Libreria.DM\obj\Debug\netcoreapp3.1\Libreria.DM.AssemblyInfo.cs
+E:\Libreria\LibreriaGAIA\Libreria.DM\obj\Debug\netcoreapp3.1\Libreria.DM.csproj.CoreCompileInputs.cache
+E:\Libreria\LibreriaGAIA\Libreria.DM\obj\Debug\netcoreapp3.1\Libreria.DM.csproj.CopyComplete
+E:\Libreria\LibreriaGAIA\Libreria.DM\obj\Debug\netcoreapp3.1\Libreria.DM.dll
+E:\Libreria\LibreriaGAIA\Libreria.DM\obj\Debug\netcoreapp3.1\Libreria.DM.pdb

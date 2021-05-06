@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Libreria.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Libreria.Api.Controllers.AutoresController.AutoresController.insertarAutores(Libreria.DT.Autores.DTAutor)">
+            <summary>
+            Inserta los autores a nuestra base de datos  
+            </summary>
+            <param name="autor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.AutoresController.AutoresController.consultarAutores">
+            <summary>
+            Realiza la consulta de autores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.AutoresController.AutoresController.eliminarautores(Libreria.DT.Autores.DTAutor)">
+            <summary>
+            Elimina al autor según su ID
+            </summary>
+            <param name="autor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.AutoresController.AutoresController.actualizarAutor(Libreria.DT.Autores.DTAutor)">
+            <summary>
+            Actualiza un autor según su ID
+            </summary>
+            <param name="autor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.AutoresController.AutoresController.getAutorById(Libreria.DT.Autores.DTAutor)">
+            <summary>
+            Consultar los autores según su ID
+            </summary>
+            <param name="autor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.CombosController.CombosController.consultarPaises">
+            <summary>
+            Consultar los países disponibles 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.CombosController.CombosController.consultarDepartamentos(Libreria.DT.Combos.DTPais)">
+            <summary>
+            Consultar los departamentos disponibles según su país
+            </summary>
+            <param name="pais"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.CombosController.CombosController.consultarCiudades(Libreria.DT.Combos.DTDepartamento)">
+            <summary>
+            Consultar las ciudades según su departamento
+            </summary>
+            <param name="departamento"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.CombosController.CombosController.consultarSexo">
+            <summary>
+            Consultar los sexos disponibles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.LibrosController.LibrosController.insertarLibros(Libreria.DT.Libros.DTLibro)">
+            <summary>
+            Inserta los Libros a nuestra base de datos
+            </summary>
+            <param name="libro"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.LibrosController.LibrosController.consultarLibros">
+            <summary>
+            Realiza la consulta de Libros
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.LibrosController.LibrosController.eliminarLibros(Libreria.DT.Libros.DTLibro)">
+            <summary>
+            Elimina al libro según su ID
+            </summary>
+            <param name="libro"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Libreria.Api.Controllers.LibrosController.LibrosController.actualizarAutor(Libreria.DT.Libros.DTLibro)">
+            <summary>
+            Actualiza un libro según su ID
+            </summary>
+            <param name="libro"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

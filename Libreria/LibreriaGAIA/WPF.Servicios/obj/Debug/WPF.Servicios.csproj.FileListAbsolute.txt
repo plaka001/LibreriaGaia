@@ -1,0 +1,13 @@
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\WPF.Servicios.dll
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\WPF.Servicios.pdb
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\WPF.AD.dll
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\WPF.Modelos.dll
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\Newtonsoft.Json.dll
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\WPF.AD.pdb
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\WPF.Modelos.pdb
+E:\Libreria\LibreriaGAIA\WPF.Servicios\bin\Debug\Newtonsoft.Json.xml
+E:\Libreria\LibreriaGAIA\WPF.Servicios\obj\Debug\WPF.Servicios.csprojAssemblyReference.cache
+E:\Libreria\LibreriaGAIA\WPF.Servicios\obj\Debug\WPF.Servicios.csproj.CoreCompileInputs.cache
+E:\Libreria\LibreriaGAIA\WPF.Servicios\obj\Debug\WPF.Servicios.csproj.CopyComplete
+E:\Libreria\LibreriaGAIA\WPF.Servicios\obj\Debug\WPF.Servicios.dll
+E:\Libreria\LibreriaGAIA\WPF.Servicios\obj\Debug\WPF.Servicios.pdb

@@ -1,0 +1,18 @@
+
+29/04/2021 7:21:48 a. m. error The stored procedure 'Libreria].[ConsultarPaises]' doesn't exist.
+____________________________________________________________________________________________________
+
+29/04/2021 7:37:27 a. m. error Procedure or function 'ConsultarCiudades' expects parameter '@IdCiudad', which was not supplied.
+____________________________________________________________________________________________________
+
+29/04/2021 7:38:24 a. m. error Procedure or function 'ConsultarCiudades' expects parameter '@IdDepartamento', which was not supplied.
+____________________________________________________________________________________________________
+
+29/04/2021 7:38:30 a. m. error Procedure or function 'ConsultarCiudades' expects parameter '@IdDepartamento', which was not supplied.
+____________________________________________________________________________________________________
+
+29/04/2021 7:38:42 a. m. error Procedure or function 'ConsultarCiudades' expects parameter '@IdDepartamento', which was not supplied.
+____________________________________________________________________________________________________
+
+29/04/2021 7:45:26 a. m. error Procedure or function 'InsertarAutores' expects parameter '@Departamento', which was not supplied.
+____________________________________________________________________________________________________

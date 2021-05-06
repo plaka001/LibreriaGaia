@@ -1,0 +1,6 @@
+E:\Libreria\LibreriaGAIA\WPF.Modelos\bin\Debug\WPF.Modelos.dll
+E:\Libreria\LibreriaGAIA\WPF.Modelos\bin\Debug\WPF.Modelos.pdb
+E:\Libreria\LibreriaGAIA\WPF.Modelos\obj\Debug\WPF.Modelos.csprojAssemblyReference.cache
+E:\Libreria\LibreriaGAIA\WPF.Modelos\obj\Debug\WPF.Modelos.csproj.CoreCompileInputs.cache
+E:\Libreria\LibreriaGAIA\WPF.Modelos\obj\Debug\WPF.Modelos.dll
+E:\Libreria\LibreriaGAIA\WPF.Modelos\obj\Debug\WPF.Modelos.pdb

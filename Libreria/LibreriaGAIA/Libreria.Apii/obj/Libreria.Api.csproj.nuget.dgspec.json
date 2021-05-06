@@ -1,0 +1,347 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Libreria\\LibreriaGAIA\\Libreria.Apii\\Libreria.Api.csproj": {}
+  },
+  "projects": {
+    "E:\\Libreria\\LibreriaGAIA\\Libreria.Apii\\Libreria.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Libreria\\LibreriaGAIA\\Libreria.Apii\\Libreria.Api.csproj",
+        "projectName": "Libreria.Api",
+        "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.Apii\\Libreria.Api.csproj",
+        "packagesPath": "C:\\Users\\solop\\.nuget\\packages\\",
+        "outputPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.Apii\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\solop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\Libreria\\LibreriaGAIA\\Libreria.BM\\Libreria.BM.csproj": {
+                "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.BM\\Libreria.BM.csproj"
+              },
+              "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj": {
+                "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj"
+              },
+              "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\Libreria.Soporte.csproj": {
+                "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\Libreria.Soporte.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Libreria\\LibreriaGAIA\\Libreria.BM\\Libreria.BM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Libreria\\LibreriaGAIA\\Libreria.BM\\Libreria.BM.csproj",
+        "projectName": "Libreria.BM",
+        "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.BM\\Libreria.BM.csproj",
+        "packagesPath": "C:\\Users\\solop\\.nuget\\packages\\",
+        "outputPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.BM\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\solop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\Libreria\\LibreriaGAIA\\Libreria.DM\\Libreria.DM.csproj": {
+                "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DM\\Libreria.DM.csproj"
+              },
+              "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj": {
+                "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj"
+              },
+              "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\Libreria.Soporte.csproj": {
+                "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\Libreria.Soporte.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Libreria\\LibreriaGAIA\\Libreria.DM\\Libreria.DM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Libreria\\LibreriaGAIA\\Libreria.DM\\Libreria.DM.csproj",
+        "projectName": "Libreria.DM",
+        "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DM\\Libreria.DM.csproj",
+        "packagesPath": "C:\\Users\\solop\\.nuget\\packages\\",
+        "outputPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DM\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\solop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj": {
+                "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Insight.Database": {
+              "target": "Package",
+              "version": "[6.2.11, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj",
+        "projectName": "Libreria.DT",
+        "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\Libreria.DT.csproj",
+        "packagesPath": "C:\\Users\\solop\\.nuget\\packages\\",
+        "outputPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.DT\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\solop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\Libreria.Soporte.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\Libreria.Soporte.csproj",
+        "projectName": "Libreria.Soporte",
+        "projectPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\Libreria.Soporte.csproj",
+        "packagesPath": "C:\\Users\\solop\\.nuget\\packages\\",
+        "outputPath": "E:\\Libreria\\LibreriaGAIA\\Libreria.Soporte\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\solop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
