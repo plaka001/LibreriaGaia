@@ -17,6 +17,7 @@
     {
         private readonly ILibroService _service;
         private readonly IAutorService _serviceAutor;
+
         public VistaLibros()
         {
             _service = new LibroService();
@@ -146,6 +147,7 @@
                         {
                             Msj = "Datos registrados con éxito";
                             await GetAllLibros();
+                            await new VistaAutor().GetAll();
                             //ClearFields();
                         }
                         else
@@ -187,6 +189,7 @@
                         {
                             Msj = "Datos actualizados con éxito";
                             await GetAllLibros();
+                            await new VistaAutor().GetAll();
                             ClearFields();
                         }
                         else
@@ -219,17 +222,17 @@
                 if (response != null)
                 {
                     Msj = "Datos eliminados con éxito";
-                    //IsEnabledUpdate = false;
+
                     IsEnabled = true;
                     await GetAllLibros();
-                    // ClearFields();
+                    await new VistaAutor().GetAll();
+                    ClearFields();
                 }
                 else
                 {
                     Msj = "Autor con libros asociados no se puede eliminar";
                     IsEnabled = true;
-                    // IsEnabledUpdate = false;
-                    //   ClearFields();
+                    ClearFields();
                 }
 
 
@@ -244,22 +247,7 @@
                 IsBusy = false;
             }
         }
-        private object libroSeleccionado;
 
-        public object LibroSeleccionado
-        {
-            get => libroSeleccionado;
-            set
-            {
-                SetProperty(ref libroSeleccionado, value);
-                if (libroSeleccionado != null)
-                {
-                    Id = Convert.ToInt32(libroSeleccionado.GetType().GetProperty("IdLibro").GetValue(libroSeleccionado, null));
-                    GetLibroById().ConfigureAwait(true);
-                }
-            }
-
-        }
 
         private bool ValidateFields()
         {
@@ -304,7 +292,24 @@
             Msj = string.Empty;
 
         }
-        private ObservableCollection<DTAutorList> authors = null;
+        private object libroSeleccionado;
+
+        public object LibroSeleccionado
+        {
+            get => libroSeleccionado;
+            set
+            {
+                SetProperty(ref libroSeleccionado, value);
+                if (libroSeleccionado != null)
+                {
+                    Id = Convert.ToInt32(libroSeleccionado.GetType().GetProperty("IdLibro").GetValue(libroSeleccionado, null));
+                    GetLibroById().ConfigureAwait(true);
+                }
+            }
+
+        }
+
+        public static ObservableCollection<DTAutorList> authors = null;
         public ObservableCollection<DTAutorList> Authors
         {
             get

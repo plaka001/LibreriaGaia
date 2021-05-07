@@ -1,4 +1,0 @@
-
-6/05/2021 12:27:24 a. m. error The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Libros__IdAutor__6C190EBB". The conflict occurred in database "Libreria", table "Libreria.Autores", column 'IdAutor'.
-The statement has been terminated.
-____________________________________________________________________________________________________

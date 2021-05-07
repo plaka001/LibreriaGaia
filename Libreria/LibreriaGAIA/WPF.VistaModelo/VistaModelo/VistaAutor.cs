@@ -43,7 +43,10 @@
                 if (Json != null)
                 {
                     DTRespuesta<IList<DTAutorList>> result = JsonConvert.DeserializeObject<DTRespuesta<IList<DTAutorList>>>(Json);
-                    Authors = new ObservableCollection<DTAutorList>(result.Data);
+                    var lista = new ObservableCollection<DTAutorList>(result.Data);
+                    Authors.Clear();
+                    foreach (var item in lista)
+                        Authors.Add(item);
 
                 }
 
@@ -134,6 +137,7 @@
                         {
                             Msj = "Datos actualizados con éxito";
                             await GetAll();
+                            await _vistaLibros.GetAllAutores().ConfigureAwait(true);
                             ClearFields();
                         }
                         else
@@ -206,6 +210,7 @@
                     {
                         Msj = "Datos eliminados con éxito";
                         await GetAll();
+                        await _vistaLibros.GetAllAutores().ConfigureAwait(true);
                         ClearFields();
                     }
                     else
@@ -453,40 +458,15 @@
 
         }
 
-        private int idDepartamento;
-
-        public int IdDepartamento
-        {
-            get => idDepartamento;
-            set
-            {
-                SetProperty(ref idDepartamento, value);
-                GetCiudades().ConfigureAwait(true);
-            }
-
-        }
-        private int idCiudad;
-
-        public int IdCiudad
-        {
-            get => idCiudad;
-            set => SetProperty(ref idCiudad, value);
-        }
-        private int idSexo;
-
-        public int IdSexo
-        {
-            get => idSexo;
-            set => SetProperty(ref idSexo, value);
-        }
-
-
-
-        private ObservableCollection<DTAutorList> authors;
+        public static ObservableCollection<DTAutorList> authors = null;
         public ObservableCollection<DTAutorList> Authors
         {
-            get => authors;
-            set => SetProperty(ref authors, value);
+            get
+            {
+                if (authors == null)
+                    authors = new ObservableCollection<DTAutorList>();
+                return authors;
+            }
         }
 
 
@@ -526,6 +506,33 @@
         {
             get => sexo;
             set => SetProperty(ref sexo, value);
+        }
+
+        private int idDepartamento;
+
+        public int IdDepartamento
+        {
+            get => idDepartamento;
+            set
+            {
+                SetProperty(ref idDepartamento, value);
+                GetCiudades().ConfigureAwait(true);
+            }
+
+        }
+        private int idCiudad;
+
+        public int IdCiudad
+        {
+            get => idCiudad;
+            set => SetProperty(ref idCiudad, value);
+        }
+        private int idSexo;
+
+        public int IdSexo
+        {
+            get => idSexo;
+            set => SetProperty(ref idSexo, value);
         }
 
         private bool isSaved;
